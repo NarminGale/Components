@@ -1,7 +1,7 @@
 const btn = document.getElementById('btn')
 
 window.addEventListener('scroll', function () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (window.scrollY > 20 || window.pageYOffset > 20) {
     btn.style.display = 'block'
   } else {
     btn.style.display = 'none'
@@ -9,6 +9,6 @@ window.addEventListener('scroll', function () {
 })
 
 btn.addEventListener('click', function () {
-  document.body.scrollTop = 0
-  document.documentElement.scrollTop = 0
+  window.scrollTo(0, 0)
+  window.pageYOffset(0, 0)
 })
