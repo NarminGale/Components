@@ -44,6 +44,7 @@ html {
   position: absolute;
   top: 1rem;
   left: 1rem;
+  font-size: 1.8rem;
 }
 
 /* Position text in the bottom-left corner */
@@ -51,6 +52,7 @@ html {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
+  font-size: 1.5rem;
 }
 
 /* Position text in the middle */
