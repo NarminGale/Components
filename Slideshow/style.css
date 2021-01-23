@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.carousel-container {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide .number {
+  position: absolute;
+  margin: 1rem;
+  color: wheat;
+}
+.slide .caption {
+  color: wheat;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* left and right buttons */
+.left,
+.right {
+  color: wheat;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  background: none;
+  border: none;
+  font-size: 2.3rem;
+  padding: 0 1rem;
+  transition: 0.5s ease;
+  border-radius: 0.3rem;
+}
+.right {
+  right: 0;
+}
+.left:hover,
+.right:hover {
+  color: white;
+}
+/* left and right buttons end */
+
+/* dots */
+.dots {
+  margin: 1rem auto;
+}
+.dot {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: aqua;
+  transition: background-color 0.6s ease;
+  background-color: #bbb;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
