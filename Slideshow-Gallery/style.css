@@ -59,6 +59,10 @@ body {
 .right:hover {
   color: white;
 }
+.left:focus,
+.right:focus {
+  outline: none;
+}
 /* left and right buttons end */
 .images-container:after {
   content: '';
