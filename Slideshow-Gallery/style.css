@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(32, 46, 32);
+}
+.carousel-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.slide {
+  padding-top: 1.2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide .number {
+  position: absolute;
+  margin: 1rem;
+  color: wheat;
+}
+.slide .caption {
+  color: wheat;
+  background-color: rgb(32, 46, 32);
+  position: absolute;
+  bottom: 0;
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* left and right buttons */
+.left,
+.right {
+  color: wheat;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  background: none;
+  border: none;
+  font-size: 2.3rem;
+  padding: 0 1rem;
+  transition: 0.5s ease;
+  border-radius: 0.3rem;
+}
+.right {
+  right: 0;
+}
+.left:hover,
+.right:hover {
+  color: white;
+}
+/* left and right buttons end */
+.images-container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.image {
+  float: left;
+  width: 20%;
+}
+.image img {
+  vertical-align: middle;
+}
+.cursor {
+  cursor: pointer;
+}
+.demo {
+  opacity: 0.5;
+}
