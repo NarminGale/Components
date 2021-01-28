@@ -22,10 +22,11 @@ body {
 .slide .number {
   position: absolute;
   margin: 1rem;
-  color: rgb(32, 46, 32);
+  color: white;
+  font-weight: bold;
 }
 .slide .caption {
-  color: wheat;
+  color: white;
   background-color: rgb(32, 46, 32);
   position: absolute;
   bottom: 0;
