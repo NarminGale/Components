@@ -31,15 +31,30 @@ function dotColor() {
   })
 }
 
-function carousel() {
-  if (counter == slides.length) {
-    counter = 0
-  }
-  if (counter < 0) {
-    counter = slides.length - 1
-  }
+dots.forEach(function (dot, index) {
+  dot.addEventListener('click', function () {
+    counter = index
+    carousel()
+  })
+})
 
+function carousel() {
   slides.forEach(function (slide) {
+    if (counter > slides.length - 1) {
+      counter = 0
+      console.log(' counter equalled zero')
+    }
+    if (counter < 0) {
+      counter = slides.length - 1
+    }
+    console.log(counter, ' THE COUNTER')
     slide.style.transform = `translateX(-${counter * 100}%)`
+  })
+  dots.forEach(function (dot, index) {
+    if (index === counter) {
+      dot.classList.add('active')
+    } else {
+      dot.classList.remove('active')
+    }
   })
 }
